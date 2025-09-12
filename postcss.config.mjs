@@ -10,12 +10,10 @@ const config = {
     // CSS nano for production optimization
     ...(process.env.NODE_ENV === 'production' ? { 
       'cssnano': {
-        preset: ['advanced', {
+        preset: ['default', {
           discardComments: {
             removeAll: true,
           },
-          reduceIdents: false,
-          zindex: false,
         }]
       }
     } : {})
