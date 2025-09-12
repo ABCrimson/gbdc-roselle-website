@@ -16,6 +16,14 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 ## ✨ Latest Updates (September 12, 2025)
 
 ### 🎉 New Features Added Today
+- **Programs Grid** - Beautiful grid layout with Tailwind 4.0 container queries
+- **Age Group Filtering** - Interactive tabs for filtering by age (6 programs)
+- **3D Hover Effects** - Advanced Framer Motion 12 animations with tilt effects
+- **Program Modals** - Full-screen details with image galleries and schedules
+- **Enrollment Tracking** - Real-time capacity and waitlist indicators
+- **Responsive Cards** - Container query-based responsive design
+
+### Earlier Today
 - **Internationalization (i18n)** - Dynamic locale routing with middleware
 - **4 Language Support** - English, Spanish, Polish, and Ukrainian
 - **Server-side Translations** - No client-side JS for translations
