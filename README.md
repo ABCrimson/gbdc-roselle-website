@@ -13,7 +13,7 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 **Live Demo**: [Coming Soon]  
 **Repository**: [https://github.com/ABCrimson/gbdc-roselle-website](https://github.com/ABCrimson/gbdc-roselle-website)
 
-## ✨ Latest Updates (December 2024)
+## ✨ Latest Updates (September 2025)
 
 ### 🎉 New Features Added
 - **Complete Homepage** with 6 animated sections using Framer Motion 12
@@ -322,7 +322,7 @@ type(scope): description
 
 ## 📄 License
 
-Copyright © 2024 Great Beginnings Day Care Center. All rights reserved.
+Copyright © 2025 Great Beginnings Day Care Center. All rights reserved.
 
 This is proprietary software. Unauthorized copying, modification, or distribution is strictly prohibited.
 
@@ -345,7 +345,7 @@ This is proprietary software. Unauthorized copying, modification, or distributio
 
 ---
 
-**Last Updated**: December 2024  
+**Last Updated**: September 12, 2025  
 **Version**: 1.0.0  
 **Status**: 🚧 In Active Development
 
