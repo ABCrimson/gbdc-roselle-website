@@ -2,19 +2,14 @@
   "name": "gbdc-roselle-website",
   "version": "0.1.0",
   "private": true,
-  
-  "//": "=== SCRIPTS SECTION ===",
   "//": "These commands run different parts of the application",
   "scripts": {
-    "dev": "next dev --turbopack",     
+    "dev": "next dev --turbopack",
     "//dev": "Starts development server with Turbopack (faster than webpack)",
-    
-    "build": "next build",               
+    "build": "next build",
     "//build": "Creates optimized production build of the website",
-    
-    "start": "next start",               
+    "start": "next start",
     "//start": "Runs the production server (use after 'npm run build')",
-    
     "lint": "next lint"
   },
   "dependencies": {
@@ -31,6 +26,7 @@
     "@radix-ui/react-toast": "latest",
     "@react-email/components": "latest",
     "@supabase/auth-helpers-nextjs": "latest",
+    "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "2.57.4",
     "@vercel/analytics": "latest",
     "@vercel/speed-insights": "latest",
