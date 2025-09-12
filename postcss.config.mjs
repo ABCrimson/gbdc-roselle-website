@@ -1,5 +1,25 @@
+/** @type {import('postcss-load-config').Config} */
 const config = {
-  plugins: ["@tailwindcss/postcss"],
+  plugins: {
+    // Tailwind CSS 4.0 with Lightning CSS
+    '@tailwindcss/postcss': {},
+    
+    // Autoprefixer for browser compatibility
+    'autoprefixer': {},
+    
+    // CSS nano for production optimization
+    ...(process.env.NODE_ENV === 'production' ? { 
+      'cssnano': {
+        preset: ['advanced', {
+          discardComments: {
+            removeAll: true,
+          },
+          reduceIdents: false,
+          zindex: false,
+        }]
+      }
+    } : {})
+  },
 };
 
 export default config;

@@ -1,9 +1,32 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    // TypeScript 5.9.2 - Use latest ECMAScript features
     "target": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"],
+    
+    // Module resolution - Use bundler for Next.js 15.5.2
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false,
+    
+    // JavaScript support
     "allowJs": true,
-    "skipLibCheck": true,
+    "checkJs": true,
+    
+    // Emit configuration
+    "noEmit": true,
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "remove",
+    "downlevelIteration": true,
+    
+    // Type checking - STRICTEST settings for TypeScript 5.9.2
     "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -22,25 +45,102 @@
     "noPropertyAccessFromIndexSignature": true,
     "allowUnusedLabels": false,
     "allowUnreachableCode": false,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    
+    // TypeScript 5.9.2 new features
+    "verbatimModuleSyntax": true,
+    "allowArbitraryExtensions": false,
+    "resolvePackageJsonExports": true,
+    "resolvePackageJsonImports": true,
+    "customConditions": [],
+    
+    // Interop constraints
     "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    // Experimental features for TypeScript 5.9.2
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "useDefineForClassFields": true,
+    
+    // Skip library checking for performance
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    
+    // Incremental compilation
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+    
+    // JSX configuration for React 19
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    
+    // Path mapping
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@/components/*": ["./components/*"],
+      "@/lib/*": ["./lib/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/actions/*": ["./actions/*"],
+      "@/types/*": ["./types/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/public/*": ["./public/*"]
+    },
+    
+    // Plugins
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    
+    // TypeScript 5.9.2 additional strict checks
+    "noUncheckedSideEffectImports": true,
+    "assumeChangesOnlyAffectDirectDependencies": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  
+  // Include patterns
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cts",
+    "**/*.mts",
+    ".next/types/**/*.ts",
+    "types/**/*.d.ts"
+  ],
+  
+  // Exclude patterns
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "public",
+    "coverage",
+    "dist",
+    "build",
+    "*.config.js",
+    "*.config.ts"
+  ],
+  
+  // TypeScript 5.9.2 Watch options
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "excludeDirectories": ["**/node_modules", ".next", "out"],
+    "excludeFiles": ["**/*.log", "**/*.tmp"]
+  },
+  
+  // Type acquisition for JavaScript projects
+  "typeAcquisition": {
+    "enable": true,
+    "include": [],
+    "exclude": []
+  }
 }
