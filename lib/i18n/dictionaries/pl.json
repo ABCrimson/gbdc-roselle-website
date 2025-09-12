@@ -1,0 +1,202 @@
+{
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "success": "Sukces",
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "edit": "Edytuj",
+    "delete": "Usuń",
+    "back": "Wstecz",
+    "next": "Następny",
+    "previous": "Poprzedni",
+    "close": "Zamknij",
+    "open": "Otwórz",
+    "yes": "Tak",
+    "no": "Nie",
+    "ok": "OK",
+    "submit": "Wyślij",
+    "learn_more": "Dowiedz Się Więcej",
+    "contact_us": "Skontaktuj Się",
+    "call_now": "Zadzwoń Teraz"
+  },
+  "nav": {
+    "home": "Start",
+    "about": "O Nas",
+    "programs": "Programy",
+    "contact": "Kontakt",
+    "enroll": "Zapisz Teraz",
+    "gallery": "Galeria",
+    "testimonials": "Referencje",
+    "resources": "Zasoby"
+  },
+  "hero": {
+    "title": "Great Beginnings Day Care",
+    "subtitle": "Gdzie Podróż Każdego Dziecka Zaczyna Się z Miłością, Nauką i Śmiechem",
+    "description": "Zapewniamy wysokiej jakości opiekę nad dziećmi i wczesną edukację w pielęgnującym środowisku dla dzieci w wieku od 6 tygodni do 12 lat w Roselle, Illinois od 1995 roku.",
+    "cta": "Zaplanuj Wizytę",
+    "cta_secondary": "Poznaj Nasze Programy",
+    "trusted_since": "Zaufanie Rodzin Od 1995",
+    "licensed": "Licencjonowany i Ubezpieczony"
+  },
+  "about": {
+    "title": "O Great Beginnings",
+    "subtitle": "Prawie 30 Lat Wysokiej Jakości Opieki nad Dziećmi",
+    "description": "W Great Beginnings Day Care wierzymy, że każde dziecko zasługuje na bezpieczne, pielęgnujące środowisko, w którym może rosnąć, uczyć się i rozwijać. Od 1995 roku zapewniamy wyjątkowe usługi opieki nad dziećmi dla rodzin w Roselle i okolicznych społecznościach.",
+    "mission": {
+      "title": "Nasza Misja",
+      "description": "Zapewnienie wysokiej jakości, przystępnej cenowo opieki nad dziećmi w ciepłym, kochającym środowisku, które promuje społeczny, emocjonalny, fizyczny i poznawczy rozwój każdego dziecka."
+    },
+    "values": {
+      "title": "Nasze Wartości",
+      "safety": "Bezpieczeństwo Przede Wszystkim - Dobrobyt Twojego dziecka to nasz najwyższy priorytet",
+      "learning": "Nauka Poprzez Zabawę - Działania edukacyjne, które sprawiają, że nauka jest przyjemna",
+      "family": "Partnerstwo Rodzinne - Współpraca dla sukcesu Twojego dziecka",
+      "community": "Połączenie Społeczności - Budowanie trwałych relacji"
+    },
+    "experience": "Lata Doświadczenia",
+    "families_served": "Obsłużone Rodziny",
+    "qualified_staff": "Wykwalifikowany i Troskliwy Personel"
+  },
+  "programs": {
+    "title": "Nasze Programy",
+    "subtitle": "Programy Odpowiednie dla Wieku, Zaprojektowane dla Każdego Etapu",
+    "infant": {
+      "title": "Opieka nad Niemowlętami",
+      "age": "6 tygodni - 18 miesięcy",
+      "description": "Kochająca, zindywidualizowana opieka dla Twoich najmłodszych z elastycznym harmonogramem dostosowanym do potrzeb Twojego dziecka.",
+      "features": [
+        "Niski stosunek dzieci do opiekunów",
+        "Indywidualne harmonogramy karmienia i drzemki",
+        "Dzienniki komunikacji codziennej",
+        "Bezpieczne, zdezynfekowane obszary zabaw",
+        "Śledzenie kamieni milowych rozwoju"
+      ]
+    },
+    "toddler": {
+      "title": "Program dla Maluchów",
+      "age": "18 miesięcy - 3 lata",
+      "description": "Aktywna nauka poprzez zabawę, eksplorację i interakcję społeczną w celu budowania niezależności i pewności siebie.",
+      "features": [
+        "Wsparcie w nauce korzystania z toalety",
+        "Działania rozwoju języka",
+        "Kreatywne sztuki i rzemiosła",
+        "Czas eksploracji na świeżym powietrzu",
+        "Rozwój umiejętności społecznych"
+      ]
+    },
+    "preschool": {
+      "title": "Program Przedszkolny",
+      "age": "3 - 5 lat",
+      "description": "Program przygotowawczy do przedszkola skupiający się na umiejętnościach akademickich, rozwoju społecznym i niezależności.",
+      "features": [
+        "Umiejętności przedakademickie (litery, cyfry, kształty)",
+        "Działania przygotowujące do szkoły",
+        "Czas kręgu i działania grupowe",
+        "Rozwój umiejętności motorycznych drobnych i grubych",
+        "Budowanie charakteru i wartości"
+      ]
+    },
+    "afterschool": {
+      "title": "Opieka Po Szkole",
+      "age": "5 - 12 lat",
+      "description": "Bezpieczne, nadzorowane środowisko z pomocą w odrabianiu lekcji, zajęciami i pożywnymi przekąskami po szkole.",
+      "features": [
+        "Transport z lokalnych szkół",
+        "Pomoc w odrabianiu lekcji",
+        "Zajęcia rekreacyjne",
+        "Zdrowe przekąski zapewnione",
+        "Programy obozu letniego"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Skontaktuj Się z Nami",
+    "subtitle": "Odwiedź Nas Dzisiaj - Wizyty Mile Widziane!",
+    "description": "Chcielibyśmy poznać Ciebie i Twoją rodzinę. Skontaktuj się z nami, aby zaplanować wizytę lub dowiedzieć się więcej o naszych programach.",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "address": "Adres",
+    "hours": "Godziny",
+    "form": {
+      "title": "Wyślij Nam Wiadomość",
+      "name": "Twoje Imię",
+      "email": "Adres E-mail",
+      "phone": "Numer Telefonu",
+      "child_age": "Wiek Dziecka",
+      "program": "Zainteresowanie Programem",
+      "message": "Wiadomość",
+      "send": "Wyślij Wiadomość",
+      "success": "Dziękujemy za Twoją wiadomość! Wkrótce się z Tobą skontaktujemy.",
+      "error": "Przepraszamy, wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie lub zadzwoń do nas bezpośrednio."
+    },
+    "schedule_tour": "Zaplanuj Wizytę",
+    "call_us": "Zadzwoń Dzisiaj",
+    "email_us": "Napisz Do Nas"
+  },
+  "footer": {
+    "about": "O Nas",
+    "programs": "Programy",
+    "contact": "Kontakt",
+    "hours": "Godziny Pracy",
+    "monday_friday": "Poniedziałek - Piątek: 6:30 - 18:30",
+    "closed_weekends": "Zamknięte w weekendy i główne święta",
+    "follow_us": "Śledź Nas",
+    "newsletter": "Newsletter",
+    "newsletter_signup": "Bądź na bieżąco z wiadomościami i wydarzeniami",
+    "copyright": "© {{year}} Great Beginnings Day Care. Wszystkie prawa zastrzeżone.",
+    "licensed": "Licencjonowane przez Departament Dzieci i Usług Rodzinnych Illinois",
+    "address": "123 Main Street, Roselle, IL 60172",
+    "phone": "(630) 555-0123",
+    "email": "info@greatbeginningsdaycare.com"
+  },
+  "enrollment": {
+    "title": "Zapisz Swoje Dziecko",
+    "subtitle": "Dołącz Do Naszej Rodziny Żłobka Już Dziś",
+    "description": "Gotowy, aby dać swojemu dziecku świetny początek? Nasz proces zapisów jest prosty i przejrzysty.",
+    "steps": {
+      "tour": {
+        "title": "Zaplanuj Wizytę",
+        "description": "Odwiedź nasze placówki i poznaj nasz troskliwy personel"
+      },
+      "apply": {
+        "title": "Wypełnij Wniosek",
+        "description": "Wypełnij nasze formularze zapisów i dostarcz wymagane dokumenty"
+      },
+      "start": {
+        "title": "Rozpocznij Swoją Podróż",
+        "description": "Rozpocznij edukacyjną przygodę swojego dziecka z nami"
+      }
+    },
+    "requirements": {
+      "title": "Wymagania Zapisów",
+      "immunizations": "Aktualne dokumenty szczepień",
+      "physical": "Formularz badania lekarskiego",
+      "emergency": "Informacje kontaktowe awaryjne",
+      "birth_certificate": "Akt urodzenia lub dowód wieku"
+    },
+    "tuition": {
+      "title": "Informacje o Czesnym",
+      "description": "Konkurencyjne stawki z elastycznymi opcjami płatności",
+      "contact_for_rates": "Skontaktuj się z nami w sprawie aktualnych stawek czesnego",
+      "discounts": "Dostępne zniżki dla wielu dzieci i wojskowych"
+    }
+  },
+  "testimonials": {
+    "title": "Co Mówią Rodziny",
+    "subtitle": "Wysłuchaj Rodziców z Naszej Społeczności"
+  },
+  "gallery": {
+    "title": "Galeria Zdjęć",
+    "subtitle": "Zobacz Nasze Placówki i Programy w Akcji"
+  },
+  "resources": {
+    "title": "Zasoby dla Rodziców",
+    "subtitle": "Pomocne Informacje dla Rodzin",
+    "handbook": "Podręcznik dla Rodziców",
+    "calendar": "Kalendarz Szkolny",
+    "forms": "Formularze i Dokumenty",
+    "nutrition": "Informacje Żywieniowe",
+    "development": "Zasoby Rozwoju Dziecka"
+  }
+}

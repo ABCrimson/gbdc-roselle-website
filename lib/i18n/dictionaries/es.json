@@ -1,0 +1,202 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "open": "Abrir",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "OK",
+    "submit": "Enviar",
+    "learn_more": "Saber Más",
+    "contact_us": "Contáctanos",
+    "call_now": "Llama Ahora"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "programs": "Programas",
+    "contact": "Contacto",
+    "enroll": "Inscribirse Ahora",
+    "gallery": "Galería",
+    "testimonials": "Testimonios",
+    "resources": "Recursos"
+  },
+  "hero": {
+    "title": "Great Beginnings Day Care",
+    "subtitle": "Donde el Viaje de Cada Niño Comienza con Amor, Aprendizaje y Risas",
+    "description": "Proporcionando cuidado infantil de calidad y educación temprana en un ambiente acogedor para niños de 6 semanas a 12 años en Roselle, Illinois desde 1995.",
+    "cta": "Programar una Visita",
+    "cta_secondary": "Conoce Nuestros Programas",
+    "trusted_since": "Confianza de las Familias Desde 1995",
+    "licensed": "Con Licencia y Asegurado"
+  },
+  "about": {
+    "title": "Acerca de Great Beginnings",
+    "subtitle": "Casi 30 Años de Cuidado Infantil de Calidad",
+    "description": "En Great Beginnings Day Care, creemos que cada niño merece un ambiente seguro y acogedor donde pueda crecer, aprender y prosperar. Desde 1995, hemos estado proporcionando servicios excepcionales de cuidado infantil a familias en Roselle y comunidades circundantes.",
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Proporcionar cuidado infantil de alta calidad y asequible en un ambiente cálido y amoroso que promueva el desarrollo social, emocional, físico y cognitivo de cada niño."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "safety": "Seguridad Primero - El bienestar de su hijo es nuestra máxima prioridad",
+      "learning": "Aprender Jugando - Actividades educativas que hacen divertido el aprendizaje",
+      "family": "Sociedad Familiar - Trabajando juntos para el éxito de su hijo",
+      "community": "Conexión Comunitaria - Construyendo relaciones duraderas"
+    },
+    "experience": "Años de Experiencia",
+    "families_served": "Familias Atendidas",
+    "qualified_staff": "Personal Calificado y Cariñoso"
+  },
+  "programs": {
+    "title": "Nuestros Programas",
+    "subtitle": "Programas Apropiados para la Edad Diseñados para Cada Etapa",
+    "infant": {
+      "title": "Cuidado de Bebés",
+      "age": "6 semanas - 18 meses",
+      "description": "Cuidado amoroso e individualizado para sus pequeños con horarios flexibles para satisfacer las necesidades de su bebé.",
+      "features": [
+        "Proporciones bajas de niño a cuidador",
+        "Horarios individuales de alimentación y siesta",
+        "Registros de comunicación diarios",
+        "Áreas de juego seguras y desinfectadas",
+        "Seguimiento de hitos del desarrollo"
+      ]
+    },
+    "toddler": {
+      "title": "Programa para Niños Pequeños",
+      "age": "18 meses - 3 años",
+      "description": "Aprendizaje activo a través del juego, exploración e interacción social para construir independencia y confianza.",
+      "features": [
+        "Apoyo para el entrenamiento del baño",
+        "Actividades de desarrollo del lenguaje",
+        "Artes y manualidades creativas",
+        "Tiempo de exploración al aire libre",
+        "Desarrollo de habilidades sociales"
+      ]
+    },
+    "preschool": {
+      "title": "Programa Preescolar",
+      "age": "3 - 5 años",
+      "description": "Programa de preparación para el jardín de infantes enfocado en habilidades académicas, desarrollo social e independencia.",
+      "features": [
+        "Habilidades pre-académicas (letras, números, formas)",
+        "Actividades de preparación escolar",
+        "Tiempo de círculo y actividades grupales",
+        "Desarrollo de habilidades motoras finas y gruesas",
+        "Construcción del carácter y valores"
+      ]
+    },
+    "afterschool": {
+      "title": "Cuidado Después de la Escuela",
+      "age": "5 - 12 años",
+      "description": "Ambiente seguro y supervisado con ayuda con las tareas, actividades y meriendas nutritivas después de la escuela.",
+      "features": [
+        "Transporte desde escuelas locales",
+        "Asistencia con las tareas",
+        "Actividades recreativas",
+        "Meriendas saludables proporcionadas",
+        "Programas de campamento de verano"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¡Visítanos Hoy - Visitas Bienvenidas!",
+    "description": "Nos encantaría conocerte a ti y a tu familia. Contáctanos para programar una visita o aprender más sobre nuestros programas.",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "address": "Dirección",
+    "hours": "Horarios",
+    "form": {
+      "title": "Envíanos un Mensaje",
+      "name": "Tu Nombre",
+      "email": "Dirección de Correo",
+      "phone": "Número de Teléfono",
+      "child_age": "Edad del Niño",
+      "program": "Interés en Programa",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "success": "¡Gracias por tu mensaje! Te responderemos pronto.",
+      "error": "Lo sentimos, hubo un error al enviar tu mensaje. Inténtalo de nuevo o llámanos directamente."
+    },
+    "schedule_tour": "Programar una Visita",
+    "call_us": "Llámanos Hoy",
+    "email_us": "Envíanos un Correo"
+  },
+  "footer": {
+    "about": "Acerca de",
+    "programs": "Programas",
+    "contact": "Contacto",
+    "hours": "Horarios de Operación",
+    "monday_friday": "Lunes - Viernes: 6:30 AM - 6:30 PM",
+    "closed_weekends": "Cerrado fines de semana y días festivos",
+    "follow_us": "Síguenos",
+    "newsletter": "Boletín",
+    "newsletter_signup": "Mantente actualizado con noticias y eventos",
+    "copyright": "© {{year}} Great Beginnings Day Care. Todos los derechos reservados.",
+    "licensed": "Con licencia del Departamento de Servicios para Niños y Familias de Illinois",
+    "address": "123 Main Street, Roselle, IL 60172",
+    "phone": "(630) 555-0123",
+    "email": "info@greatbeginningsdaycare.com"
+  },
+  "enrollment": {
+    "title": "Inscribe a Tu Hijo",
+    "subtitle": "Únete a Nuestra Familia de Guardería Hoy",
+    "description": "¿Listo para darle a tu hijo un gran comienzo? Nuestro proceso de inscripción es simple y directo.",
+    "steps": {
+      "tour": {
+        "title": "Programar una Visita",
+        "description": "Visita nuestras instalaciones y conoce a nuestro personal cariñoso"
+      },
+      "apply": {
+        "title": "Completar Aplicación",
+        "description": "Llena nuestros formularios de inscripción y proporciona los documentos requeridos"
+      },
+      "start": {
+        "title": "Comienza Tu Viaje",
+        "description": "Inicia la aventura educativa de tu hijo con nosotros"
+      }
+    },
+    "requirements": {
+      "title": "Requisitos de Inscripción",
+      "immunizations": "Registros de vacunación actuales",
+      "physical": "Formulario de examen físico",
+      "emergency": "Información de contacto de emergencia",
+      "birth_certificate": "Certificado de nacimiento o prueba de edad"
+    },
+    "tuition": {
+      "title": "Información de Matrícula",
+      "description": "Tarifas competitivas con opciones de pago flexibles",
+      "contact_for_rates": "Contáctanos para las tarifas actuales de matrícula",
+      "discounts": "Descuentos para múltiples niños y militares disponibles"
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen las Familias",
+    "subtitle": "Escucha de los Padres en Nuestra Comunidad"
+  },
+  "gallery": {
+    "title": "Galería de Fotos",
+    "subtitle": "Ve Nuestras Instalaciones y Programas en Acción"
+  },
+  "resources": {
+    "title": "Recursos para Padres",
+    "subtitle": "Información Útil para Familias",
+    "handbook": "Manual para Padres",
+    "calendar": "Calendario Escolar",
+    "forms": "Formularios y Documentos",
+    "nutrition": "Información Nutricional",
+    "development": "Recursos de Desarrollo Infantil"
+  }
+}

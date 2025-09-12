@@ -1,0 +1,202 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "submit": "Submit",
+    "learn_more": "Learn More",
+    "contact_us": "Contact Us",
+    "call_now": "Call Now"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "programs": "Programs", 
+    "contact": "Contact",
+    "enroll": "Enroll Now",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "resources": "Resources"
+  },
+  "hero": {
+    "title": "Great Beginnings Day Care",
+    "subtitle": "Where Every Child's Journey Begins with Love, Learning, and Laughter",
+    "description": "Providing quality childcare and early education in a nurturing environment for children aged 6 weeks to 12 years in Roselle, Illinois since 1995.",
+    "cta": "Schedule a Tour",
+    "cta_secondary": "Learn About Our Programs",
+    "trusted_since": "Trusted by Families Since 1995",
+    "licensed": "Licensed & Insured"
+  },
+  "about": {
+    "title": "About Great Beginnings",
+    "subtitle": "Nearly 30 Years of Quality Childcare",
+    "description": "At Great Beginnings Day Care, we believe every child deserves a safe, nurturing environment where they can grow, learn, and thrive. Since 1995, we've been providing exceptional childcare services to families in Roselle and surrounding communities.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide high-quality, affordable childcare in a warm, loving environment that promotes each child's social, emotional, physical, and cognitive development."
+    },
+    "values": {
+      "title": "Our Values",
+      "safety": "Safety First - Your child's wellbeing is our top priority",
+      "learning": "Learning Through Play - Educational activities that make learning fun",
+      "family": "Family Partnership - Working together for your child's success",
+      "community": "Community Connection - Building relationships that last"
+    },
+    "experience": "Years of Experience",
+    "families_served": "Families Served",
+    "qualified_staff": "Qualified & Caring Staff"
+  },
+  "programs": {
+    "title": "Our Programs",
+    "subtitle": "Age-Appropriate Programs Designed for Every Stage",
+    "infant": {
+      "title": "Infant Care",
+      "age": "6 weeks - 18 months",
+      "description": "Loving, individualized care for your littlest ones with flexible scheduling to meet your baby's needs.",
+      "features": [
+        "Low child-to-caregiver ratios",
+        "Individual feeding and nap schedules", 
+        "Daily communication logs",
+        "Safe, sanitized play areas",
+        "Developmental milestone tracking"
+      ]
+    },
+    "toddler": {
+      "title": "Toddler Program",
+      "age": "18 months - 3 years",
+      "description": "Active learning through play, exploration, and social interaction to build independence and confidence.",
+      "features": [
+        "Potty training support",
+        "Language development activities",
+        "Creative arts and crafts",
+        "Outdoor exploration time",
+        "Social skills development"
+      ]
+    },
+    "preschool": {
+      "title": "Preschool Program",
+      "age": "3 - 5 years",
+      "description": "Kindergarten readiness program focusing on academic skills, social development, and independence.",
+      "features": [
+        "Pre-academic skills (letters, numbers, shapes)",
+        "School readiness activities",
+        "Circle time and group activities",
+        "Fine and gross motor skill development",
+        "Character building and values"
+      ]
+    },
+    "afterschool": {
+      "title": "After School Care",
+      "age": "5 - 12 years", 
+      "description": "Safe, supervised environment with homework help, activities, and nutritious snacks after school.",
+      "features": [
+        "Transportation from local schools",
+        "Homework assistance",
+        "Recreational activities",
+        "Healthy snacks provided",
+        "Summer camp programs"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Visit Us Today - Tours Welcome!",
+    "description": "We'd love to meet you and your family. Contact us to schedule a tour or learn more about our programs.",
+    "phone": "Phone",
+    "email": "Email", 
+    "address": "Address",
+    "hours": "Hours",
+    "form": {
+      "title": "Send Us a Message",
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "child_age": "Child's Age",
+      "program": "Program Interest",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon.",
+      "error": "Sorry, there was an error sending your message. Please try again or call us directly."
+    },
+    "schedule_tour": "Schedule a Tour",
+    "call_us": "Call Us Today",
+    "email_us": "Email Us"
+  },
+  "footer": {
+    "about": "About",
+    "programs": "Programs", 
+    "contact": "Contact",
+    "hours": "Hours of Operation",
+    "monday_friday": "Monday - Friday: 6:30 AM - 6:30 PM",
+    "closed_weekends": "Closed weekends and major holidays",
+    "follow_us": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletter_signup": "Stay updated with news and events",
+    "copyright": "© {{year}} Great Beginnings Day Care. All rights reserved.",
+    "licensed": "Licensed by the Illinois Department of Children and Family Services",
+    "address": "123 Main Street, Roselle, IL 60172",
+    "phone": "(630) 555-0123",
+    "email": "info@greatbeginningsdaycare.com"
+  },
+  "enrollment": {
+    "title": "Enroll Your Child",
+    "subtitle": "Join Our Daycare Family Today",
+    "description": "Ready to give your child a great beginning? Our enrollment process is simple and straightforward.",
+    "steps": {
+      "tour": {
+        "title": "Schedule a Tour",
+        "description": "Visit our facility and meet our caring staff"
+      },
+      "apply": {
+        "title": "Complete Application",
+        "description": "Fill out our enrollment forms and provide required documents"
+      },
+      "start": {
+        "title": "Start Your Journey",
+        "description": "Begin your child's educational adventure with us"
+      }
+    },
+    "requirements": {
+      "title": "Enrollment Requirements",
+      "immunizations": "Current immunization records",
+      "physical": "Physical examination form",
+      "emergency": "Emergency contact information", 
+      "birth_certificate": "Birth certificate or proof of age"
+    },
+    "tuition": {
+      "title": "Tuition Information",
+      "description": "Competitive rates with flexible payment options",
+      "contact_for_rates": "Contact us for current tuition rates",
+      "discounts": "Multi-child and military discounts available"
+    }
+  },
+  "testimonials": {
+    "title": "What Families Say",
+    "subtitle": "Hear from Parents in Our Community"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "See Our Facility and Programs in Action"
+  },
+  "resources": {
+    "title": "Parent Resources",
+    "subtitle": "Helpful Information for Families",
+    "handbook": "Parent Handbook",
+    "calendar": "School Calendar",
+    "forms": "Forms & Documents",
+    "nutrition": "Nutrition Information",
+    "development": "Child Development Resources"
+  }
+}
