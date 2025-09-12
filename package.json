@@ -2,10 +2,19 @@
   "name": "gbdc-roselle-website",
   "version": "0.1.0",
   "private": true,
+  
+  "//": "=== SCRIPTS SECTION ===",
+  "//": "These commands run different parts of the application",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "next dev --turbopack",     
+    "//dev": "Starts development server with Turbopack (faster than webpack)",
+    
+    "build": "next build",               
+    "//build": "Creates optimized production build of the website",
+    
+    "start": "next start",               
+    "//start": "Runs the production server (use after 'npm run build')",
+    
     "lint": "next lint"
   },
   "dependencies": {
