@@ -13,14 +13,21 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 **Live Demo**: [Coming Soon]  
 **Repository**: [https://github.com/ABCrimson/gbdc-roselle-website](https://github.com/ABCrimson/gbdc-roselle-website)
 
-## ✨ Latest Updates (September 2025)
+## ✨ Latest Updates (September 12, 2025)
 
-### 🎉 New Features Added
+### 🎉 New Features Added Today
+- **Internationalization (i18n)** - Dynamic locale routing with middleware
+- **4 Language Support** - English, Spanish, Polish, and Ukrainian
+- **Server-side Translations** - No client-side JS for translations
+- **Language Switcher** - Native language names with flag emojis
+- **Locale-aware Components** - All sections support translations
+- **SEO Optimization** - hreflang tags and locale-specific metadata
+
+### Previous Features
 - **Complete Homepage** with 6 animated sections using Framer Motion 12
 - **UI Component System** - 27 shadcn/ui components with Radix UI v2
 - **Email System** - Resend 6.0.3 integration with React Email templates
 - **Theme System** - Light/dark mode with system preference detection
-- **Multi-language Support** - English, Spanish, and Polish languages
 - **Layout Components** - Professional header, footer, and navigation
 
 ## 🚀 Tech Stack
@@ -57,7 +64,7 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 - **CTA Section** - Contact form and enrollment call-to-action
 
 ### 🎯 Core Features
-- 🌐 **Multi-language Support** - EN, ES, PL with language switcher
+- 🌐 **Multi-language Support** - EN, ES, PL, UK with automatic detection
 - 🌓 **Theme Toggle** - Light/dark mode with smooth transitions
 - 📱 **Fully Responsive** - Mobile-first design with touch gestures
 - ♿ **Accessibility** - WCAG 2.1 AA compliant with ARIA labels
@@ -85,10 +92,13 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 ```
 gbdc-roselle-website/
 ├── app/                          # Next.js 15.5.2 App Router
+│   ├── [locale]/                # Dynamic locale routing
+│   │   ├── layout.tsx           # Locale-aware layout
+│   │   └── page.tsx             # Localized homepage
 │   ├── api/                     # API routes
 │   │   └── send-email/          # Email endpoints
 │   ├── layout.tsx               # Root layout with providers
-│   ├── page.tsx                 # Homepage with all sections
+│   ├── page.tsx                 # Homepage redirect
 │   └── globals.css              # Global styles with animations
 ├── components/                   # React components
 │   ├── ui/                      # Base UI components (27 total)
@@ -100,15 +110,15 @@ gbdc-roselle-website/
 │   │   ├── language-switcher.tsx # Language selector
 │   │   └── ...                 # 20+ more components
 │   ├── sections/                # Homepage sections
-│   │   ├── hero.tsx            # Hero with parallax
-│   │   ├── features.tsx        # Features grid
-│   │   ├── programs.tsx        # Programs showcase
-│   │   ├── testimonials.tsx    # Reviews carousel
-│   │   ├── stats.tsx           # Statistics
-│   │   └── cta.tsx             # Call-to-action
+│   │   ├── locale-hero.tsx     # Localized hero with parallax
+│   │   ├── locale-features.tsx # Localized features grid
+│   │   ├── locale-programs.tsx # Localized programs showcase
+│   │   ├── locale-testimonials.tsx # Localized reviews
+│   │   ├── locale-stats.tsx    # Localized statistics
+│   │   └── locale-cta.tsx      # Localized call-to-action
 │   ├── layout/                 # Layout components
-│   │   ├── header.tsx          # Site header
-│   │   ├── footer.tsx          # Site footer
+│   │   ├── locale-header.tsx   # Localized site header
+│   │   ├── locale-footer.tsx   # Localized site footer
 │   │   └── mobile-menu.tsx     # Mobile navigation
 │   └── providers/              # Context providers
 │       └── theme-provider.tsx   # Theme context
@@ -118,6 +128,10 @@ gbdc-roselle-website/
 │   │   ├── server.ts           # Server clients
 │   │   ├── config.ts           # Configuration
 │   │   └── ...                 # More Supabase files
+│   ├── i18n/                   # Internationalization
+│   │   ├── dictionaries/       # Translation files (EN, ES, PL, UK)
+│   │   ├── config.ts           # i18n configuration
+│   │   └── index.ts            # Translation utilities
 │   ├── email/                  # Email system
 │   │   ├── templates/          # React Email templates
 │   │   ├── services.ts         # Email services
@@ -128,6 +142,7 @@ gbdc-roselle-website/
 │   ├── types.ts                # TypeScript types
 │   └── repositories/           # Data access layer
 ├── public/                     # Static assets
+├── middleware.ts               # Locale routing middleware
 ├── daycare-specs.md            # Project specifications
 ├── MODERNIZATION_AUDIT.md      # Tech audit report
 ├── components.json             # shadcn/ui config
