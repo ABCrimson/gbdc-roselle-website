@@ -1,29 +1,47 @@
 @import "tailwindcss";
 
 @theme {
+  /* GBDC Primary Blue Colors */
   --color-primary-50: #eff6ff;
   --color-primary-100: #dbeafe;
   --color-primary-200: #bfdbfe;
   --color-primary-300: #93c5fd;
   --color-primary-400: #60a5fa;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
-  --color-primary-800: #1e40af;
-  --color-primary-900: #1e3a8a;
-  --color-primary-950: #172554;
+  --color-primary-500: #2563eb;  /* Main GBDC Blue */
+  --color-primary-600: #1d4ed8;
+  --color-primary-700: #1e40af;
+  --color-primary-800: #1e3a8a;
+  --color-primary-900: #172554;
+  --color-primary-950: #0f172a;
 
-  --color-secondary-50: #f0f9ff;
-  --color-secondary-100: #e0f2fe;
-  --color-secondary-200: #bae6fd;
-  --color-secondary-300: #7dd3fc;
-  --color-secondary-400: #38bdf8;
-  --color-secondary-500: #0ea5e9;
-  --color-secondary-600: #0284c7;
-  --color-secondary-700: #0369a1;
-  --color-secondary-800: #075985;
-  --color-secondary-900: #0c4a6e;
-  --color-secondary-950: #082f49;
+  /* GBDC Secondary Yellow/Gold Colors */
+  --color-secondary-50: #fefce8;
+  --color-secondary-100: #fef9c3;
+  --color-secondary-200: #fef08a;
+  --color-secondary-300: #fde047;
+  --color-secondary-400: #facc15;  /* Bright yellow for highlights */
+  --color-secondary-500: #eab308;  /* Main GBDC Yellow */
+  --color-secondary-600: #ca8a04;
+  --color-secondary-700: #a16207;
+  --color-secondary-800: #854d0e;
+  --color-secondary-900: #713f12;
+  --color-secondary-950: #422006;
+
+  /* GBDC Accent Colors for Daycare */
+  --color-accent-green-50: #f0fdf4;
+  --color-accent-green-100: #dcfce7;
+  --color-accent-green-200: #bbf7d0;
+  --color-accent-green-500: #22c55e;  /* Safe, friendly green */
+  
+  --color-accent-orange-50: #fff7ed;
+  --color-accent-orange-100: #ffedd5;
+  --color-accent-orange-200: #fed7aa;
+  --color-accent-orange-500: #f97316;  /* Playful orange */
+  
+  --color-accent-purple-50: #faf5ff;
+  --color-accent-purple-100: #f3e8ff;
+  --color-accent-purple-200: #e9d5ff;
+  --color-accent-purple-500: #a855f7;  /* Creative purple */
 
   --font-family-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
@@ -37,56 +55,71 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
+  /* GBDC Light Theme - Warm and Welcoming */
+  --background: #fefefe;
+  --foreground: #0f172a;
   --card: #ffffff;
-  --card-foreground: #0a0a0a;
+  --card-foreground: #0f172a;
   --popover: #ffffff;
-  --popover-foreground: #0a0a0a;
-  --primary: #2563eb;
+  --popover-foreground: #0f172a;
+  --primary: #2563eb;              /* GBDC Blue */
   --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #0f172a;
-  --muted: #f1f5f9;
+  --secondary: #eab308;            /* GBDC Yellow */
+  --secondary-foreground: #422006;
+  --muted: #f8fafc;
   --muted-foreground: #64748b;
-  --accent: #f1f5f9;
-  --accent-foreground: #0f172a;
+  --accent: #fef9c3;              /* Light yellow accent */
+  --accent-foreground: #713f12;
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
   --border: #e2e8f0;
-  --input: #e2e8f0;
+  --input: #f8fafc;
   --ring: #2563eb;
   --radius: 0.5rem;
+  
+  /* GBDC-specific variables */
+  --daycare-warm: #fef9c3;        /* Warm yellow background */
+  --daycare-safe: #f0fdf4;        /* Safe green background */
+  --daycare-creative: #faf5ff;    /* Creative purple background */
+  --daycare-playful: #fff7ed;     /* Playful orange background */
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #fafafa;
-  --card: #141414;
-  --card-foreground: #fafafa;
-  --popover: #141414;
-  --popover-foreground: #fafafa;
-  --primary: #3b82f6;
-  --primary-foreground: #030712;
-  --secondary: #262626;
-  --secondary-foreground: #fafafa;
-  --muted: #262626;
-  --muted-foreground: #a3a3a3;
-  --accent: #262626;
-  --accent-foreground: #fafafa;
-  --destructive: #7f1d1d;
-  --destructive-foreground: #fafafa;
-  --border: #262626;
-  --input: #262626;
-  --ring: #3b82f6;
+  /* GBDC Dark Theme - Professional yet Warm */
+  --background: #0f172a;           /* GBDC Dark Blue */
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #1e293b;
+  --popover-foreground: #f8fafc;
+  --primary: #60a5fa;             /* Lighter GBDC Blue for dark mode */
+  --primary-foreground: #0f172a;
+  --secondary: #fde047;           /* Bright GBDC Yellow for dark mode */
+  --secondary-foreground: #422006;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #334155;              /* Subtle dark accent */
+  --accent-foreground: #f8fafc;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: #60a5fa;
+  
+  /* GBDC Dark-specific variables */
+  --daycare-warm: #422006;        /* Dark warm yellow background */
+  --daycare-safe: #14532d;        /* Dark safe green background */
+  --daycare-creative: #581c87;    /* Dark creative purple background */
+  --daycare-playful: #9a3412;     /* Dark playful orange background */
 }
 
 * {
-  @apply border-border;
+  border-color: hsl(var(--border));
 }
 
 body {
-  @apply bg-background text-foreground;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
   font-family: var(--font-family-sans);
   font-feature-settings: "rlig" 1, "calt" 1;
 }
@@ -115,20 +148,83 @@ body {
 
 @layer components {
   .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
     max-width: 1280px;
   }
   
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
   .card {
-    @apply rounded-lg border bg-card text-card-foreground shadow-sm;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(var(--border));
+    background-color: hsl(var(--card));
+    color: hsl(var(--card-foreground));
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   }
   
   .button {
-    @apply inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  .button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(var(--ring));
+  }
+  
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
   }
   
   .input {
-    @apply flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid hsl(var(--input));
+    background-color: hsl(var(--background));
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: hsl(var(--foreground));
+  }
+  
+  .input::placeholder {
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px hsl(var(--ring));
+  }
+  
+  .input:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
@@ -493,5 +589,93 @@ body {
     to {
       height: 0;
     }
+  }
+
+  /* GBDC-specific animations */
+  @keyframes gentle-bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  @keyframes rainbow-text {
+    0% { color: #2563eb; }      /* GBDC Blue */
+    25% { color: #eab308; }     /* GBDC Yellow */
+    50% { color: #22c55e; }     /* Safe Green */
+    75% { color: #f97316; }     /* Playful Orange */
+    100% { color: #2563eb; }    /* Back to GBDC Blue */
+  }
+
+  /* GBDC daycare-specific utility classes */
+  .daycare-warm {
+    background-color: var(--daycare-warm);
+  }
+  
+  .daycare-safe {
+    background-color: var(--daycare-safe);
+  }
+  
+  .daycare-creative {
+    background-color: var(--daycare-creative);
+  }
+  
+  .daycare-playful {
+    background-color: var(--daycare-playful);
+  }
+
+  .animate-gentle-bounce {
+    animation: gentle-bounce 2s ease-in-out infinite;
+  }
+
+  .animate-rainbow-text {
+    animation: rainbow-text 3s ease-in-out infinite;
+  }
+
+  /* Child-friendly interactive elements */
+  .child-friendly-button {
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+
+  .child-friendly-button:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: scale(1.05);
+  }
+
+  .child-friendly-button:active {
+    transform: scale(0.95);
+  }
+
+  .child-friendly-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px hsl(var(--primary) / 0.3);
+  }
+
+  .child-friendly-card {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    border: 2px solid transparent;
+  }
+
+  .child-friendly-card:hover {
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    transform: translateY(-0.5rem);
+    border-color: hsl(var(--primary) / 0.2);
   }
 }

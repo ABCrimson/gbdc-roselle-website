@@ -13,7 +13,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { sendContactFormEmails } from '@/lib/email/services'
-import { ContactFormEmailData } from '@/lib/email/index'
+import type { ContactFormEmailData } from '@/lib/email/index'
 
 /**
  * 📮 POST /api/send-email/contact
@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     const result = await sendContactFormEmails(emailData, {
       sendToStaff: true,
       sendConfirmation: true,
-      staffEmail: process.env.NEXT_PUBLIC_BUSINESS_EMAIL
+      staffEmail: process.env.NEXT_PUBLIC_BUSINESS_EMAIL || 'admin@greatbeginningsdaycare.com'
     })
 
     if (result.success) {

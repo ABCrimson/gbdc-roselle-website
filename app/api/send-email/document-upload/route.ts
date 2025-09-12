@@ -13,7 +13,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { sendDocumentUploadEmail } from '@/lib/email/services'
-import { DocumentUploadEmailData } from '@/lib/email/index'
+import type { DocumentUploadEmailData } from '@/lib/email/index'
 
 /**
  * 📮 POST /api/send-email/document-upload

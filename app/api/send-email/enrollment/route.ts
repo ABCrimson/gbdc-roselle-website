@@ -14,7 +14,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { sendEnrollmentConfirmationEmail } from '@/lib/email/services'
-import { EnrollmentEmailData } from '@/lib/email/index'
+import type { EnrollmentEmailData } from '@/lib/email/index'
 
 /**
  * 📮 POST /api/send-email/enrollment
