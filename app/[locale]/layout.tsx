@@ -66,9 +66,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ 
   params 
 }: {
-  params: { locale: Locale }
+  params: Promise<{ locale: Locale }>
 }): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations(locale);
   const localeConfig = getLocaleConfig(locale);
   
@@ -89,7 +89,7 @@ export async function generateMetadata({
       languages: {
         en: "https://greatbeginningsdaycare.com/en",
         es: "https://greatbeginningsdaycare.com/es",
-        pl: "https://greatbeginningsdaycare.com/pl",
+        ru: "https://greatbeginningsdaycare.com/ru",
         uk: "https://greatbeginningsdaycare.com/uk",
       },
     },
@@ -99,12 +99,12 @@ export async function generateMetadata({
       type: "website",
       locale: locale === 'en' ? 'en_US' : 
               locale === 'es' ? 'es_ES' :
-              locale === 'pl' ? 'pl_PL' :
+              locale === 'ru' ? 'ru_RU' :
               locale === 'uk' ? 'uk_UA' : 'en_US',
       alternateLocale: locales.filter(l => l !== locale).map(l => 
         l === 'en' ? 'en_US' :
         l === 'es' ? 'es_ES' :
-        l === 'pl' ? 'pl_PL' :
+        l === 'ru' ? 'ru_RU' :
         l === 'uk' ? 'uk_UA' : 'en_US'
       ),
       url: `https://greatbeginningsdaycare.com/${locale}`,
@@ -168,9 +168,9 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   
   // Validate locale parameter
   if (!locales.includes(locale)) {
@@ -183,10 +183,30 @@ export default async function LocaleLayout({
   
   // Get translations for the layout
   const t = await getTranslations(locale);
-  
+
+  // Prepare JSON-LD data with translations
+  const jsonLdData = {
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": t("hero.title"),
+    "description": t("hero.description"),
+    "url": `https://greatbeginningsdaycare.com/${locale}`,
+    "inLanguage": locale,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Main Street",
+      "addressLocality": "Roselle",
+      "addressRegion": "IL",
+      "postalCode": "60172",
+      "addressCountry": "US"
+    },
+    "telephone": "(630) 555-0123",
+    "email": "info@greatbeginningsdaycare.com",
+  };
+
   return (
-    <html 
-      lang={locale} 
+    <html
+      lang={locale}
       dir={localeConfig.dir}
       suppressHydrationWarning
     >
@@ -195,11 +215,11 @@ export default async function LocaleLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="Content-Language" content={locale} />
-        
+
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Alternate language links for SEO */}
         {locales.map((lang) => (
           <link
@@ -214,29 +234,12 @@ export default async function LocaleLayout({
           hrefLang="x-default"
           href={`https://greatbeginningsdaycare.com/${defaultLocale}`}
         />
-        
+
         {/* JSON-LD structured data for the locale */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ChildCare",
-              "name": "Great Beginnings Day Care",
-              "description": t("hero.description"),
-              "url": `https://greatbeginningsdaycare.com/${locale}`,
-              "inLanguage": locale,
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Main Street",
-                "addressLocality": "Roselle",
-                "addressRegion": "IL",
-                "postalCode": "60172",
-                "addressCountry": "US"
-              },
-              "telephone": "(630) 555-0123",
-              "email": "info@greatbeginningsdaycare.com",
-            })
+            __html: JSON.stringify(jsonLdData)
           }}
         />
       </head>
@@ -292,7 +295,7 @@ export default async function LocaleLayout({
  * Layout Features:
  * 
  * 1. Server Components: Entire layout renders on server for performance
- * 2. Dynamic Locale Support: Handles all 4 supported languages (en, es, pl, uk)
+ * 2. Dynamic Locale Support: Handles all 4 supported languages (en, es, ru, uk)
  * 3. SEO Optimized: Proper hreflang tags, canonical URLs, structured data
  * 4. Accessibility: Proper lang and dir attributes, semantic HTML
  * 5. Performance: Font optimization, preconnections, minimal client JS

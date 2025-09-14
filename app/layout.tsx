@@ -46,7 +46,7 @@ const geistMono = Geist_Mono({
  */
 export const metadata: Metadata = {
   title: "Great Beginnings Day Care - Roselle, IL",
-  description: "Premier daycare center in Roselle, Illinois. Providing quality childcare, early education, and nurturing environment for infants through school-age children since 1995.",
+  description: "Premier daycare center in Roselle, Illinois. Providing quality childcare, early education, and nurturing environment for infants through school-age children. Owned by experienced educators with 25+ years in early childhood development.",
   
   // Basic robots configuration
   robots: {

@@ -131,7 +131,7 @@ export function Hero() {
               <span className="text-accent-green-600 font-semibold"> laughter</span>.
               <br />
               <span className="text-lg text-gray-600 mt-2 block">
-                Serving families in Roselle, IL since 1995
+                Nurturing young minds with 25+ years of expertise, proudly serving Roselle since 2014
               </span>
             </p>
           </motion.div>

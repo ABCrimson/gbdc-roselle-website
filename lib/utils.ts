@@ -181,7 +181,7 @@ export function createVariants<T extends Record<string, Record<string, string>>>
  * 
  * 🧒 Like waiting for everyone to sit down before starting story time!
  */
-export function debounce<T extends (...args: any[]) => any>(
+export function debounce<T extends (...args: never[]) => unknown>(
   func: T,
   wait: number
 ): (...args: Parameters<T>) => void {

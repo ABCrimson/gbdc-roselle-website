@@ -22,7 +22,7 @@ import type { WelcomeEmailData } from '@/lib/email/index'
  */
 export async function POST(request: NextRequest) {
   try {
-    console.log('🌟 Processing welcome email request...')
+    // Processing welcome email request
 
     // 📋 Get the enrollment data from the request
     const body = await request.json()
@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
     const result = await sendWelcomeEmail(emailData, recipientEmail)
 
     if (result.success) {
-      console.log('✅ Welcome email sent successfully!')
+      // Welcome email sent successfully
       
       return NextResponse.json({
         success: true,

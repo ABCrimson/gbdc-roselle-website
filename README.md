@@ -33,7 +33,7 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 - **Enrollment Tracking** - Real-time capacity and waitlist indicators
 - **Responsive Cards** - Container query-based responsive design
 - **Internationalization (i18n)** - Dynamic locale routing with middleware
-- **4 Language Support** - English, Spanish, Polish, and Ukrainian
+- **4 Language Support** - English, Spanish, Russian, and Ukrainian
 - **Server-side Translations** - No client-side JS for translations
 - **Language Switcher** - Native language names with flag emojis
 - **Locale-aware Components** - All sections support translations
@@ -80,7 +80,7 @@ Modern, high-performance website for Great Beginnings Day Care Center in Roselle
 - **CTA Section** - Contact form and enrollment call-to-action
 
 ### 🎯 Core Features
-- 🌐 **Multi-language Support** - EN, ES, PL, UK with automatic detection
+- 🌐 **Multi-language Support** - EN, ES, RU, UK with automatic detection
 - 🌓 **Theme Toggle** - Light/dark mode with smooth transitions
 - 📱 **Fully Responsive** - Mobile-first design with touch gestures
 - ♿ **Accessibility** - WCAG 2.1 AA compliant with ARIA labels
@@ -145,7 +145,7 @@ gbdc-roselle-website/
 │   │   ├── config.ts           # Configuration
 │   │   └── ...                 # More Supabase files
 │   ├── i18n/                   # Internationalization
-│   │   ├── dictionaries/       # Translation files (EN, ES, PL, UK)
+│   │   ├── dictionaries/       # Translation files (EN, ES, RU, UK)
 │   │   ├── config.ts           # i18n configuration
 │   │   └── index.ts            # Translation utilities
 │   ├── email/                  # Email system

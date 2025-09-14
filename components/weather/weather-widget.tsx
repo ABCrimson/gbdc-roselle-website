@@ -8,15 +8,15 @@
  */
 
 import { Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import { 
-  fetchCurrentWeather, 
+import {
+  fetchCurrentWeather,
   fetchWeatherForecast,
-  isWeatherError 
+  isWeatherError
 } from "@/lib/weather/api";
 import { WeatherDisplay } from "./weather-display";
-import { WeatherError, WeatherFallback } from "./weather-error";
+import { WeatherFallback } from "./weather-error";
 import { WeatherLoading } from "./weather-loading";
+import { WeatherErrorBoundary } from "./weather-error-boundary";
 
 interface WeatherWidgetProps {
   showForecast?: boolean;
@@ -100,27 +100,23 @@ export async function WeatherWidget({
 }: WeatherWidgetProps) {
   if (compact) {
     return (
-      <ErrorBoundary
+      <WeatherErrorBoundary
         fallback={<div className="text-sm text-gray-500">Weather unavailable</div>}
       >
         <Suspense fallback={<WeatherLoading />}>
           <CompactWeatherData />
         </Suspense>
-      </ErrorBoundary>
+      </WeatherErrorBoundary>
     );
   }
-  
+
   return (
     <div className={className}>
-      <ErrorBoundary
-        fallbackRender={({ error, resetErrorBoundary }) => (
-          <WeatherError error={error} reset={resetErrorBoundary} />
-        )}
-      >
+      <WeatherErrorBoundary>
         <Suspense fallback={<WeatherLoading />}>
           <WeatherData showForecast={showForecast} />
         </Suspense>
-      </ErrorBoundary>
+      </WeatherErrorBoundary>
     </div>
   );
 }

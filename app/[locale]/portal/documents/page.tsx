@@ -165,10 +165,6 @@ export default function DocumentPortalPage() {
                 parentId={parentId}
                 parentEmail={parentEmail}
                 children={children}
-                onUploadComplete={() => {
-                  // Could trigger a refresh or show a success message
-                  console.log("Upload complete!");
-                }}
               />
             </div>
           </TabsContent>

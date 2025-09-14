@@ -88,13 +88,11 @@ export function ContactForm({ className, onSuccess }: ContactFormProps) {
           
           // Handle field-specific errors
           if (result.fieldErrors) {
-            Object.entries(result.fieldErrors).forEach(([field, messages]) => {
-              console.error(`${field}: ${messages.join(', ')}`);
-            });
+            // Field-specific errors available for debugging
           }
         }
       } catch (error) {
-        console.error("Form submission error:", error);
+        // Form submission error occurred
         setSubmitResult({
           type: 'error',
           message: "An unexpected error occurred. Please try again."

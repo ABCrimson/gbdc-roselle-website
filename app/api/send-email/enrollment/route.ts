@@ -23,7 +23,7 @@ import type { EnrollmentEmailData } from '@/lib/email/index'
  */
 export async function POST(request: NextRequest) {
   try {
-    console.log('🎉 Processing enrollment confirmation email request...')
+    // Processing enrollment confirmation email request
 
     // 📋 Get the enrollment data from the request
     const body = await request.json()
@@ -98,7 +98,7 @@ export async function POST(request: NextRequest) {
     const result = await sendEnrollmentConfirmationEmail(emailData, recipientEmail)
 
     if (result.success) {
-      console.log('✅ Enrollment confirmation email sent successfully!')
+      // Enrollment confirmation email sent successfully
       
       return NextResponse.json({
         success: true,

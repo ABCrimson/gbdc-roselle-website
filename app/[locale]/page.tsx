@@ -43,7 +43,7 @@ import {
  * Page Props Interface
  */
 interface LocalePageProps {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 }
 
 /**
@@ -52,7 +52,7 @@ interface LocalePageProps {
 export async function generateMetadata({ 
   params 
 }: LocalePageProps): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
   const t = await getTranslations(locale);
   
   const title = t("hero.title");
@@ -90,7 +90,7 @@ export async function generateMetadata({
       type: "website",
       locale: locale === 'en' ? 'en_US' : 
               locale === 'es' ? 'es_ES' :
-              locale === 'pl' ? 'pl_PL' :
+              locale === 'ru' ? 'ru_RU' :
               locale === 'uk' ? 'uk_UA' : 'en_US',
     },
     
@@ -114,7 +114,7 @@ export async function generateMetadata({
  * Each section receives the locale parameter for translation purposes.
  */
 export default async function LocaleHomePage({ params }: LocalePageProps) {
-  const { locale } = params;
+  const { locale } = await params;
   
   // Get translations for any direct usage
   const t = await getTranslations(locale);

@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    console.log(`📧 Processing ${type} email request...`)
+    // Processing email request
 
     // 📬 Handle different email types
     switch (type) {

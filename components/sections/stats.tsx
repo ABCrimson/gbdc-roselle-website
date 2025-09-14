@@ -71,7 +71,7 @@ interface Stat {
   value: number;
   suffix: string;
   description: string;
-  icon: React.ComponentType<any>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   color: string;
   bgColor: string;
   progressColor: string;
@@ -97,9 +97,9 @@ const stats: Stat[] = [
   {
     id: "experience",
     title: "Years of Excellence",
-    value: 28,
+    value: 10,
     suffix: "+",
-    description: "Years serving the Roselle community with quality childcare",
+    description: "Years serving the Roselle community since we acquired the center",
     icon: Calendar,
     color: "text-primary-600",
     bgColor: "bg-primary-50",
@@ -278,19 +278,19 @@ function StatCard({ stat }: { stat: Stat }) {
 function AchievementHighlights() {
   const achievements = [
     {
-      year: "1995",
-      title: "Founded",
-      description: "Great Beginnings Day Care opened its doors"
+      year: "1999",
+      title: "Experience Begins",
+      description: "Our owners began their journey in early childhood education"
     },
     {
-      year: "2005", 
+      year: "2014",
+      title: "New Ownership",
+      description: "Acquired Great Beginnings with vision for excellence"
+    },
+    {
+      year: "2016",
       title: "Expansion",
-      description: "Added preschool and after-school programs"
-    },
-    {
-      year: "2015",
-      title: "Accreditation",
-      description: "Received state accreditation for educational excellence"
+      description: "Added enhanced preschool and after-school programs"
     },
     {
       year: "2020",

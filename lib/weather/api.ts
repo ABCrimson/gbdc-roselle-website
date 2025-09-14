@@ -58,7 +58,7 @@ export async function fetchCurrentWeather(
     const data: WeatherData = await response.json();
     return data;
   } catch (error) {
-    console.error('Weather API error:', error);
+    // Weather API error occurred
     return {
       code: 500,
       message: 'Failed to connect to weather service',
@@ -106,7 +106,7 @@ export async function fetchWeatherForecast(
     const data: ForecastData = await response.json();
     return data;
   } catch (error) {
-    console.error('Forecast API error:', error);
+    // Forecast API error occurred
     return {
       code: 500,
       message: 'Failed to connect to forecast service',

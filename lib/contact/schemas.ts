@@ -106,7 +106,7 @@ export const ageGroupLabels: Record<NonNullable<ContactFormData["childAge"]>, st
 
 // Server-side only schema (includes metadata)
 export const contactSubmissionSchema = contactFormSchema.extend({
-  ipAddress: z.string().ip().nullable(),
+  ipAddress: z.string().regex(/^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/, "Invalid IP address").nullable().optional(),
   userAgent: z.string().nullable(),
   submittedAt: z.date(),
 });

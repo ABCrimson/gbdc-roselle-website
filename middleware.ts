@@ -2,7 +2,7 @@
  * Middleware for Dynamic Locale Routing
  * 
  * Handles automatic locale detection and routing for the GBDC website.
- * Supports 4 languages: English (en), Spanish (es), Polish (pl), Ukrainian (uk)
+ * Supports 4 languages: English (en), Spanish (es), Russian (ru), Ukrainian (uk)
  * 
  * Features:
  * - Automatic locale detection from Accept-Language header

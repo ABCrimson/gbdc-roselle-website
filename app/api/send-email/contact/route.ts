@@ -22,7 +22,7 @@ import type { ContactFormEmailData } from '@/lib/email/index'
  */
 export async function POST(request: NextRequest) {
   try {
-    console.log('📝 Processing contact form email request...')
+    // Processing contact form email request
 
     // 📋 Get the form data from the request
     const body = await request.json()
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
     })
 
     if (result.success) {
-      console.log('✅ Contact form emails sent successfully!')
+      // Contact form emails sent successfully
       
       return NextResponse.json({
         success: true,
@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
         }
       })
     } else {
-      console.error('❌ Contact form email failed:', result.error)
+      // Contact form email failed
       
       return NextResponse.json(
         {

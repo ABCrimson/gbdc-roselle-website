@@ -56,27 +56,27 @@
 
 :root {
   /* GBDC Light Theme - Warm and Welcoming */
-  --background: #fefefe;
-  --foreground: #0f172a;
-  --card: #ffffff;
-  --card-foreground: #0f172a;
-  --popover: #ffffff;
-  --popover-foreground: #0f172a;
-  --primary: #2563eb;              /* GBDC Blue */
-  --primary-foreground: #ffffff;
-  --secondary: #eab308;            /* GBDC Yellow */
-  --secondary-foreground: #422006;
-  --muted: #f8fafc;
-  --muted-foreground: #64748b;
-  --accent: #fef9c3;              /* Light yellow accent */
-  --accent-foreground: #713f12;
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: #e2e8f0;
-  --input: #f8fafc;
-  --ring: #2563eb;
+  --background: 0 0% 99.6%;        /* #fefefe */
+  --foreground: 222 84% 10%;       /* #0f172a */
+  --card: 0 0% 100%;               /* #ffffff */
+  --card-foreground: 222 84% 10%;  /* #0f172a */
+  --popover: 0 0% 100%;            /* #ffffff */
+  --popover-foreground: 222 84% 10%; /* #0f172a */
+  --primary: 221 83% 53%;          /* GBDC Blue #2563eb */
+  --primary-foreground: 0 0% 100%; /* #ffffff */
+  --secondary: 50 98% 48%;         /* GBDC Yellow #eab308 */
+  --secondary-foreground: 32 95% 14%; /* #422006 */
+  --muted: 210 40% 98%;            /* #f8fafc */
+  --muted-foreground: 215 16% 47%; /* #64748b */
+  --accent: 55 94% 88%;            /* Light yellow accent #fef9c3 */
+  --accent-foreground: 35 69% 26%; /* #713f12 */
+  --destructive: 0 84% 60%;        /* #ef4444 */
+  --destructive-foreground: 0 0% 100%; /* #ffffff */
+  --border: 215 20% 91%;           /* #e2e8f0 */
+  --input: 210 40% 98%;            /* #f8fafc */
+  --ring: 221 83% 53%;             /* #2563eb */
   --radius: 0.5rem;
-  
+
   /* GBDC-specific variables */
   --daycare-warm: #fef9c3;        /* Warm yellow background */
   --daycare-safe: #f0fdf4;        /* Safe green background */
@@ -86,26 +86,26 @@
 
 .dark {
   /* GBDC Dark Theme - Professional yet Warm */
-  --background: #0f172a;           /* GBDC Dark Blue */
-  --foreground: #f8fafc;
-  --card: #1e293b;
-  --card-foreground: #f8fafc;
-  --popover: #1e293b;
-  --popover-foreground: #f8fafc;
-  --primary: #60a5fa;             /* Lighter GBDC Blue for dark mode */
-  --primary-foreground: #0f172a;
-  --secondary: #fde047;           /* Bright GBDC Yellow for dark mode */
-  --secondary-foreground: #422006;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #334155;              /* Subtle dark accent */
-  --accent-foreground: #f8fafc;
-  --destructive: #ef4444;
-  --destructive-foreground: #f8fafc;
-  --border: #334155;
-  --input: #1e293b;
-  --ring: #60a5fa;
-  
+  --background: 222 84% 10%;       /* GBDC Dark Blue #0f172a */
+  --foreground: 210 40% 98%;       /* #f8fafc */
+  --card: 222 47% 17%;             /* #1e293b */
+  --card-foreground: 210 40% 98%;  /* #f8fafc */
+  --popover: 222 47% 17%;          /* #1e293b */
+  --popover-foreground: 210 40% 98%; /* #f8fafc */
+  --primary: 213 94% 68%;          /* Lighter GBDC Blue for dark mode #60a5fa */
+  --primary-foreground: 222 84% 10%; /* #0f172a */
+  --secondary: 54 93% 63%;         /* Bright GBDC Yellow for dark mode #fde047 */
+  --secondary-foreground: 32 95% 14%; /* #422006 */
+  --muted: 222 47% 17%;            /* #1e293b */
+  --muted-foreground: 215 16% 65%; /* #94a3b8 */
+  --accent: 215 25% 27%;           /* Subtle dark accent #334155 */
+  --accent-foreground: 210 40% 98%; /* #f8fafc */
+  --destructive: 0 84% 60%;        /* #ef4444 */
+  --destructive-foreground: 210 40% 98%; /* #f8fafc */
+  --border: 215 25% 27%;           /* #334155 */
+  --input: 222 47% 17%;            /* #1e293b */
+  --ring: 213 94% 68%;             /* #60a5fa */
+
   /* GBDC Dark-specific variables */
   --daycare-warm: #422006;        /* Dark warm yellow background */
   --daycare-safe: #14532d;        /* Dark safe green background */

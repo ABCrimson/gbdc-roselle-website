@@ -22,7 +22,7 @@ import type { DocumentUploadEmailData } from '@/lib/email/index'
  */
 export async function POST(request: NextRequest) {
   try {
-    console.log('📄 Processing document upload email request...')
+    // Processing document upload email request
 
     // 📋 Get the upload data from the request
     const body = await request.json()
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
     const result = await sendDocumentUploadEmail(emailData, recipientEmail)
 
     if (result.success) {
-      console.log('✅ Document upload email sent successfully!')
+      // Document upload email sent successfully
       
       return NextResponse.json({
         success: true,

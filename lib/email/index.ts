@@ -115,7 +115,7 @@ export async function sendEmail(
   react: React.ReactElement
 ) {
   try {
-    console.log('📧 Sending email:', { to, subject })
+    // Sending email
     
     const result = await resend.emails.send({
       from: EMAIL_CONFIG.from,
@@ -126,11 +126,11 @@ export async function sendEmail(
       react
     })
     
-    console.log('✅ Email sent successfully:', result.data?.id)
+    // Email sent successfully
     return { success: true, data: result.data }
     
   } catch (error) {
-    console.error('❌ Failed to send email:', error)
+    // Failed to send email
     return { 
       success: false, 
       error: error instanceof Error ? error.message : 'Unknown error occurred'

@@ -6,12 +6,12 @@
  */
 
 // Define the locales and types here to avoid circular dependency
-export const locales = ['en', 'es', 'pl', 'uk'] as const;
+export const locales = ['en', 'es', 'ru', 'uk'] as const;
 export const defaultLocale = 'en' as const;
 export const localeNames = {
   en: 'English',
   es: 'Español',
-  pl: 'Polski',
+  ru: 'Русский',
   uk: 'Українська',
 } as const;
 
@@ -48,11 +48,11 @@ export const localeConfig = {
     dateFormat: 'dd/MM/yyyy',
     timeFormat: 'HH:mm',
   },
-  pl: {
+  ru: {
     dir: 'ltr' as const,
-    name: 'Polish',
-    nativeName: 'Polski',
-    flag: '🇵🇱',
+    name: 'Russian',
+    nativeName: 'Русский',
+    flag: '🇷🇺',
     dateFormat: 'dd.MM.yyyy',
     timeFormat: 'HH:mm',
   },

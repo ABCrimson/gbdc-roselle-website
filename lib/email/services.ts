@@ -50,7 +50,7 @@ export async function sendDocumentUploadEmail(
       throw new Error(`Invalid email address: ${recipientEmail}`)
     }
 
-    console.log('📄 Sending document upload notification to:', recipientEmail)
+    // Document upload notification being sent
 
     // 🎨 Create the beautiful email template
     const emailHtml = render(
@@ -65,7 +65,7 @@ export async function sendDocumentUploadEmail(
     )
 
     if (result.success) {
-      console.log('✅ Document upload email sent successfully!')
+      // Document upload email sent successfully
       return {
         success: true,
         emailId: result.data?.id,
@@ -118,7 +118,7 @@ export async function sendContactFormEmails(
       throw new Error(`Invalid customer email address: ${data.email}`)
     }
 
-    console.log('📝 Processing contact form emails for:', data.email)
+    // Processing contact form emails
 
     // 📧 Send notification to staff
     if (sendToStaff) {
@@ -139,7 +139,7 @@ export async function sendContactFormEmails(
             error: '',
             emailId: staffResult.data?.id || ''
           }
-          console.log('✅ Staff notification sent successfully!')
+          // Staff notification sent successfully
         } else {
           results.staffEmail.error = staffResult.error || 'Failed to send staff notification'
         }
@@ -164,7 +164,7 @@ export async function sendContactFormEmails(
             error: '',
             emailId: confirmationResult.data?.id || ''
           }
-          console.log('✅ Customer confirmation sent successfully!')
+          // Customer confirmation sent successfully
         } else {
           results.confirmationEmail.error = confirmationResult.error || 'Failed to send confirmation'
         }
@@ -213,7 +213,7 @@ export async function sendWelcomeEmail(
       throw new Error(`Invalid email address: ${recipientEmail}`)
     }
 
-    console.log('🌟 Sending welcome email to:', recipientEmail)
+    // Sending welcome email
 
     // 📧 Send the welcome email
     const result = await sendEmail(
@@ -223,7 +223,7 @@ export async function sendWelcomeEmail(
     )
 
     if (result.success) {
-      console.log('✅ Welcome email sent successfully!')
+      // Welcome email sent successfully
       return {
         success: true,
         emailId: result.data?.id,
@@ -259,7 +259,7 @@ export async function sendEnrollmentConfirmationEmail(
       throw new Error(`Invalid email address: ${recipientEmail}`)
     }
 
-    console.log('🎉 Sending enrollment confirmation to:', recipientEmail)
+    // Sending enrollment confirmation
 
     // 📧 Send the enrollment confirmation
     const result = await sendEmail(
@@ -269,7 +269,7 @@ export async function sendEnrollmentConfirmationEmail(
     )
 
     if (result.success) {
-      console.log('✅ Enrollment confirmation sent successfully!')
+      // Enrollment confirmation sent successfully
       return {
         success: true,
         emailId: result.data?.id,
@@ -300,12 +300,16 @@ export async function sendBulkEmails(
     type: 'document' | 'contact' | 'welcome' | 'enrollment'
     data: DocumentUploadEmailData | ContactFormEmailData | WelcomeEmailData | EnrollmentEmailData
     recipient: string
-    options?: any
+    options?: {
+      sendToStaff?: boolean
+      sendConfirmation?: boolean
+      staffEmail?: string
+    }
   }>
 ) {
   const results = []
 
-  console.log(`📬 Sending ${emails.length} bulk emails...`)
+  // Sending bulk emails
 
   for (const email of emails) {
     try {
@@ -366,7 +370,7 @@ export async function sendBulkEmails(
   const successCount = results.filter(r => r.success).length
   const failCount = results.length - successCount
 
-  console.log(`📊 Bulk email results: ${successCount} success, ${failCount} failed`)
+  // Bulk email processing completed
 
   return {
     success: failCount === 0,
@@ -523,7 +527,7 @@ export async function sendTestEmails(testEmail: string) {
     throw new Error('Invalid test email address')
   }
 
-  console.log('🧪 Sending test emails to:', testEmail)
+  // Sending test emails
 
   const results = await sendBulkEmails([
     {
