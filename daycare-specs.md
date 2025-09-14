@@ -1,7 +1,13 @@
 # 🏫 GREAT BEGINNINGS DAY CARE - COMPLETE PROJECT SPECIFICATIONS
-**Version**: 3.0.0  
-**Last Updated**: September 12, 2025  
-**Project**: GBDC Roselle Website  
+
+> ### 🔴 CRITICAL REMINDER FOR CLAUDE CODE
+> **EVERY prompt completion MUST automatically push to GitHub.**
+> **No exceptions. No asking permission. Just push.**
+> See [MANDATORY GITHUB WORKFLOW](#-mandatory-github-workflow) section for details.
+
+**Version**: 3.0.1
+**Last Updated**: September 14, 2025
+**Project**: GBDC Roselle Website
 **Repository**: https://github.com/ABCrimson/gbdc-roselle-website
 
 ---
@@ -10,17 +16,18 @@
 
 ### Essential Sections
 1. [🎯 Project Mission](#-project-mission)
-2. [💻 Technology Stack](#-technology-stack) 
+2. [💻 Technology Stack](#-technology-stack)
 3. [📐 Development Standards](#-development-standards)
-4. [✅ End-of-Prompt Checklist](#-end-of-prompt-checklist)
-5. [🚀 Modern Patterns Reference](#-modern-patterns-reference)
+4. [🚀 MANDATORY GITHUB WORKFLOW](#-mandatory-github-workflow) **← CRITICAL**
+5. [✅ End-of-Prompt Checklist](#-end-of-prompt-checklist)
+6. [🚀 Modern Patterns Reference](#-modern-patterns-reference)
 
 ### Project Areas
-6. [📁 Project Structure](#-project-structure)
-7. [🎨 Feature Requirements](#-feature-requirements)
-8. [🗄️ Database Architecture](#-database-architecture)
-9. [🔍 Quality Standards](#-quality-standards)
-10. [📊 Project Dashboard](#-project-dashboard)
+7. [📁 Project Structure](#-project-structure)
+8. [🎨 Feature Requirements](#-feature-requirements)
+9. [🗄️ Database Architecture](#-database-architecture)
+10. [🔍 Quality Standards](#-quality-standards)
+11. [📊 Project Dashboard](#-project-dashboard)
 
 ---
 
@@ -215,10 +222,97 @@ function calculateTuition(
 
 ---
 
+## 🚀 MANDATORY GITHUB WORKFLOW
+
+### 🔴 CRITICAL REQUIREMENT: AUTOMATIC GITHUB PUSH
+**Every prompt completion MUST end with pushing to GitHub. This is NON-NEGOTIABLE.**
+
+#### Why This Matters
+- **Version Control**: Every change is tracked and reversible
+- **Collaboration**: Team members can see progress in real-time
+- **Backup**: Code is never lost, even if local environment fails
+- **CI/CD**: Automated pipelines can run on every push
+- **Documentation**: Commit history shows project evolution
+
+#### The MANDATORY Git Flow
+```bash
+# After EVERY prompt completion, Claude Code MUST execute:
+
+# 1. Check status to see what changed
+git status
+
+# 2. Add ALL changes (including new files)
+git add -A
+
+# 3. Create descriptive commit message
+git commit -m "feat/fix/docs(scope): what was done
+
+- Bullet point of key changes
+- Technologies/patterns used
+- Any breaking changes or important notes
+
+Implements: [brief description of user request]
+Prompt: [first 50 chars of user prompt]"
+
+# 4. Push to GitHub (AUTOMATIC - NO USER CONFIRMATION NEEDED)
+git push origin master
+
+# 5. Confirm push succeeded
+git log --oneline -1
+```
+
+#### Commit Message Format
+```
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+**Types:**
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation only
+- `style`: Formatting, missing semi-colons, etc
+- `refactor`: Code change that neither fixes a bug nor adds a feature
+- `perf`: Performance improvement
+- `test`: Adding missing tests
+- `chore`: Changes to build process or auxiliary tools
+
+**Examples:**
+```bash
+git commit -m "feat(enrollment): Add enrollment form with validation
+
+- Implemented Server Actions for form processing
+- Added rate limiting and error handling
+- Created comprehensive field validation
+- Integrated email notifications
+
+Uses: React 19 Server Actions, TypeScript 5.9
+Impact: New user-facing enrollment system"
+```
+
+#### ⚠️ CLAUDE CODE BEHAVIORAL RULES
+
+1. **NEVER ask for permission to push** - Just do it automatically
+2. **NEVER skip the push** - Even for small changes
+3. **NEVER wait for user confirmation** - Push immediately after work is done
+4. **ALWAYS push before responding** - Complete the push, then tell the user what was done
+5. **NEVER leave changes uncommitted** - Every file change must be in a commit
+
+#### Error Recovery
+If push fails, Claude Code should:
+1. Run `git pull --rebase origin master` to sync
+2. Resolve any conflicts if they exist
+3. Retry the push
+4. If still failing, inform user with specific error
+
+---
+
 ## ✅ END-OF-PROMPT CHECKLIST
 
-### 🚨 AUTOMATIC GITHUB PUSH REQUIREMENT 🚨
-**IMPORTANT**: Claude Code MUST automatically push to GitHub at the end of EVERY task/prompt completion. No exceptions!
+### 📋 MUST COMPLETE BEFORE EVERY RESPONSE TO USER
 
 ### 📋 MUST COMPLETE BEFORE EVERY SAVE/COMMIT
 

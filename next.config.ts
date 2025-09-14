@@ -20,6 +20,9 @@ const nextConfig: NextConfig = {
   
   // Experimental features available in Next.js 15.5.2
   experimental: {
+    // Enable Partial Prerendering for optimal performance
+    ppr: true,
+
     // Optimize specific packages
     optimizePackageImports: [
       'lucide-react',
@@ -38,28 +41,28 @@ const nextConfig: NextConfig = {
       'zod',
       'react-hook-form',
     ],
-    
+
     // Server Actions configuration
     serverActions: {
       bodySizeLimit: '10mb',
       allowedOrigins: ['localhost:3000'],
     },
-    
+
     // Enable React 19 features
     reactCompiler: false,
-    
+
     // Web Vitals attribution
     webVitalsAttribution: ['CLS', 'FCP', 'FID', 'INP', 'LCP', 'TTFB'],
-    
+
     // Optimize CSS (disabled due to Turbopack compatibility)
     optimizeCss: false,
-    
+
     // Next.js 15.5.2 script workers (disabled to avoid Partytown requirement)
     nextScriptWorkers: false,
-    
+
     // SWC plugins
     swcPlugins: [],
-    
+
     // Optimize server React
     optimizeServerReact: true,
   },
